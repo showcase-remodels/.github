@@ -1,0 +1,29 @@
+name: SOP request
+description: Ask for a new SOP or a change to an existing one
+title: "[SOP] "
+labels: ["sop"]
+body:
+  - type: input
+    id: process
+    attributes:
+      label: Which process?
+      placeholder: e.g. Warranty intake
+    validations:
+      required: true
+  - type: dropdown
+    id: division
+    attributes:
+      label: Division
+      options: [Showcase Remodels, One Day Bath, Signature Reflections, All]
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What keeps going wrong or what is missing?
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Who should own this SOP?

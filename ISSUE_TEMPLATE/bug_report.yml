@@ -1,0 +1,22 @@
+name: Something is broken
+description: Report a broken script, form, page or automation
+title: "[Broken] "
+labels: ["bug"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: What is broken?
+      placeholder: e.g. Website lead form, installer hours report
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or error messages

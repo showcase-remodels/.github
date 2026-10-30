@@ -1,0 +1,25 @@
+name: Automation request
+description: Ask for a report or task to be automated
+title: "[Automation] "
+labels: ["automation"]
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: What do you do by hand today?
+    validations:
+      required: true
+  - type: dropdown
+    id: system
+    attributes:
+      label: Where does the data live?
+      multiple: true
+      options: [Buildertrend, SalesPro, Joist, GoHighLevel, Google Sheets, Gmail, Other]
+  - type: input
+    id: frequency
+    attributes:
+      label: How often? (daily, weekly, per job)
+  - type: input
+    id: time
+    attributes:
+      label: About how much time does it take each time?
